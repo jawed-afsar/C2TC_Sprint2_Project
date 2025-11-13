@@ -1,0 +1,57 @@
+/* ====== Global App Container ====== */
+.App {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #f4f6ff, #dbe4ff);
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ====== Heading Style ====== */
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* ====== Layout: Form + List ====== */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.left-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right-section {
+  flex: 2;
+}
+
+/* ====== Responsive Layout (Mobile & Tablets) ====== */
+@media (max-width: 900px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
